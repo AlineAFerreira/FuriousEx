@@ -1,0 +1,13 @@
+Resumo do Jogo:
+
+Despois de um termino de relacionamento nada amigavel, Brigette decidiu jogar todas as coisas do seu ex pela janela, sem se importar com as consequencias.
+
+
+Ajusde Clovis a coletar todos os seus pertences, mas cuidado! Brigette está furiosa e além dos perceteces do Clovis ela está jogando outros objetos um tanto perigosos.
+
+
+Bombas: Encerra o jogo;
+Objetos aleatórios: perde vida;
+Objetos do clovis: ganha 5 pontos.
+
+Ajudei o clovis a coletar X pertences.

@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/*!
+Laive - Furious Ex - Game
+01.Out.2016
+*/
+/*****************************
+* VARI├üVEIS
+******************************/
+/*****************************
+* FONTES
+******************************/
+@font-face {
+  font-family: 'komika_axisregular';
+  src: url("../fonts/komikax_-webfont.woff2") format("woff2"), url("../fonts/komikax_-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*****************************
+* GERAL FURIOUS EX
+******************************/
+/* line 25, ../assets/sass/_default.scss */
+body {
+  font-family: 'komika_axisregular' !important;
+}
+
+/* line 29, ../assets/sass/_default.scss */
+h1 {
+  font-size: 40px;
+  color: #603A03;
+}
+
+/* line 34, ../assets/sass/_default.scss */
+.pointer {
+  cursor: pointer;
+}
+
+/* line 38, ../assets/sass/_default.scss */
+#container {
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  background: url(../img/background.jpg) no-repeat center -250px;
+  transition: background-position 1s;
+  -webkit-transition: background-position 1s;
+}
+/* line 46, ../assets/sass/_default.scss */
+#container.ready {
+  background: url(../img/background.jpg) no-repeat center bottom;
+}
+
+/* line 52, ../assets/sass/_default.scss */
+#fundoGame {
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 58, ../assets/sass/_default.scss */
+#baloon {
+  width: 230px;
+  height: 192px;
+  background: url("../img/baloonHate.png");
+  margin-top: 110px;
+  margin-left: 25%;
+  transition: margin-top 1s;
+  -webkit-transition: margin-top 1s;
+  -moz-transition: margin-top 1s;
+  -o-transition: margin-top 1s;
+  -ms-transition: margin-top 1s;
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-name: bounce;
+  -moz-animation-duration: 2.5s;
+  -o-animation-name: bounce;
+  -o-animation-duration: 2.5s;
+  -ms-animation-name: bounce;
+  -ms-animation-duration: 2.5s;
+  animation-name: bounce;
+  animation-duration: 2.5s;
+}
+/* line 80, ../assets/sass/_default.scss */
+#baloon.ready {
+  margin-top: -400px;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+   	20%,
+   	40% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 5);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 5);
+  }
+  0% {
+    opacity: 0;
+    -ms-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+  20% {
+    -ms-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
+  40% {
+    opacity: 1;
+    -ms-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+}
+/* line 117, ../assets/sass/_default.scss */
+#jogador {
+  width: 100px;
+  height: 142px;
+  position: absolute;
+  left: 250px;
+  bottom: -350px;
+  overflow: hidden;
+  transition: bottom .9s;
+  -webkit-transition: bottom .9s;
+  -moz-transition: bottom .9s;
+  -o-transition: bottom .9s;
+  -ms-transition: bottom .9s;
+}
+/* line 130, ../assets/sass/_default.scss */
+#jogador.ready {
+  bottom: 0;
+}
+/* line 135, ../assets/sass/_default.scss */
+#jogador img.jogador {
+  max-width: 100%;
+}
+/* line 139, ../assets/sass/_default.scss */
+#jogador img.explosion {
+  -webkit-animation: xplosion .5s;
+  -moz-animation: xplosion .5s;
+  -o-animation: xplosion .5s;
+  -ms-animation: xplosion .5s;
+  animation: xplosion .5s;
+  opacity: 0;
+}
+
+@-webkit-keyframes xplosion {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: .9;
+  }
+  40% {
+    opacity: .7;
+  }
+  60% {
+    opacity: .5;
+  }
+  80% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 172, ../assets/sass/_default.scss */
+div[id^="objeto"], .object_falling {
+  position: absolute;
+  top: -150px;
+}
+/* line 176, ../assets/sass/_default.scss */
+div[id^="objeto"] img, .object_falling img {
+  max-width: 100%;
+  -ms-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+
+/* line 186, ../assets/sass/_default.scss */
+#inicio {
+  width: 370px;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+/* line 197, ../assets/sass/_default.scss */
+#inicio img.logo {
+  max-width: 370px;
+  height: auto;
+}
+/* line 202, ../assets/sass/_default.scss */
+#inicio img.start {
+  max-width: 200px;
+  height: auto;
+  position: absolute;
+  bottom: 145px;
+  left: 93px;
+}
+
+/* line 211, ../assets/sass/_default.scss */
+#placar {
+  height: 50px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+/* line 217, ../assets/sass/_default.scss */
+#placar img {
+  margin-right: 15px;
+  max-width: 140px;
+}
+/* line 222, ../assets/sass/_default.scss */
+#placar span {
+  font-size: 30px;
+  color: #FF0;
+  text-shadow: 2px 2px #000;
+  display: inline-block;
+  vertical-align: -7px;
+}
+
+/* line 231, ../assets/sass/_default.scss */
+h2 {
+  font-size: 20px;
+  color: #FFF;
+}
+
+/* line 236, ../assets/sass/_default.scss */
+#energia {
+  width: 154px;
+  height: 46px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* line 244, ../assets/sass/_default.scss */
+h3 {
+  font-size: 20px;
+  color: #603A03;
+}
+
+/* line 250, ../assets/sass/_default.scss */
+#som {
+  width: 66px;
+  height: 49px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: url("../img/icon_audio.png");
+  cursor: pointer;
+  z-index: 2;
+}
+/* line 260, ../assets/sass/_default.scss */
+#som.off {
+  background-position: 0 -49px;
+}
+
+/* line 265, ../assets/sass/_default.scss */
+#pause {
+  font-size: 45px;
+  position: absolute;
+  z-index: 1;
+  background-color: #000;
+  color: #FFF;
+  width: 280px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* line 282, ../assets/sass/_default.scss */
+#fim {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  background-color: #FFF;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+/* line 295, ../assets/sass/_default.scss */
+#fim h1, #fim h3 {
+  color: #007CBC;
+}

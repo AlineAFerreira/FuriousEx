@@ -1,0 +1,181 @@
+
+
+h1 {
+	font-family: Calibri;
+	font-size:40px;
+	color:#603A03;
+}
+
+
+
+#container{
+	width:650px;
+	height:auto;
+	position:relative;
+	margin: 0 auto;
+}
+
+
+#fundoGame {
+	width:650px;
+	height: 480px;
+	background: url(../img/background.jpg) no-repeat center -250px;
+	transition: background-position 1s;
+	-webkit-transition: background-position 1s;	
+	border-color:#FFF;
+	border-style:solid;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#fundoGame.ready {
+	background: url(../img/background.jpg) no-repeat center bottom;
+}
+
+#baloon {
+	width: 230px;
+	height: 192px;
+	background: url('../img/baloonHate.png');
+	margin-top: 110px;
+	margin-left: 150px;
+	transition: margin-top 1s;
+	-webkit-transition: margin-top 1s;
+	-moz-transition: margin-top 1s;
+	-o-transition: margin-top 1s;
+	-ms-transition: margin-top 1s;
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-name: bounce;
+	-moz-animation-duration: 2.5s;
+	-o-animation-name: bounce;
+	-o-animation-duration: 2.5s;
+	-ms-animation-name: bounce;
+	-ms-animation-duration: 2.5s;
+	animation-name: bounce;
+	animation-duration: 2.5s;
+}
+
+@-webkit-keyframes bounce {
+   0%,
+   20%,
+   40%{
+      -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 5);
+      transition-timing-function: cubic-bezier(.215, .61, .355, 5)
+   }
+   0% {
+      	opacity: 0;
+		-ms-transform: rotate(-7deg);
+		-moz-transform: rotate(-7deg);
+		-o-transform: rotate(-7deg); 
+		-webkit-transform: rotate(-7deg); 
+		transform: rotate(-7deg);      
+   }
+   20% {
+		-ms-transform: rotate(7deg);
+		-moz-transform: rotate(7deg);
+		-o-transform: rotate(7deg); 
+		-webkit-transform: rotate(7deg); 
+		transform: rotate(7deg); 
+   }
+   40% {
+   		opacity: 1;
+		-ms-transform: rotate(-7deg);
+		-moz-transform: rotate(-7deg);
+		-o-transform: rotate(-7deg); 
+		-webkit-transform: rotate(-7deg); 
+		transform: rotate(-7deg); 
+   }
+}
+
+#baloon.ready {
+	margin-top: -400px;
+}
+
+
+#jogador {
+	width:100px;
+	height:142px;
+	position:absolute;
+	left: 250px;
+	bottom: -350px;
+	transition: bottom .9s;
+	-webkit-transition: bottom .9s;
+	-moz-transition: bottom .9s;
+	-o-transition: bottom .9s;
+	-ms-transition: bottom .9s;	
+}
+
+#jogador.ready {
+	bottom: 0;
+}
+
+#jogador img{
+	max-width: 100%;
+}
+
+#objeto {
+	position: absolute;
+	top: -250px;
+}
+
+#objeto img{
+	max-width: 100%;
+	-ms-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg); 
+    -webkit-transform: rotate(-7deg); 
+    transform: rotate(-7deg);
+}
+
+#inicio {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top: 100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+h2 {
+	font-size:20px;
+	color:#FFF
+}
+
+#energia {
+	width: 154px;
+	height: 46px;
+	position: absolute;
+	right: 30px;
+	top: 30px;	
+}
+
+h3 {
+	font-family: Calibri;
+	font-size:20px;
+	color:#603A03;
+
+}
+
+#fim {
+	position: absolute;
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	left: 50%;
+    right: 50%;
+ 	top: 100px;
+	text-align:center;
+	padding:10px;
+}
