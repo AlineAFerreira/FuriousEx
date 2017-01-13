@@ -9,8 +9,8 @@ Ajude Clovis a coletar todos os seus pertences. Mas cuidado! Brigette está furi
 
 # Regras
 
-Bombas: Fim do jogo;
-Pegar objetos do Clóvis: Ganha 5 pontos.
-Perder objetos do Clóvis: Perde vida.
-Objetos aleatórios (Garrafa, Guarda-chuva, vaso,  ): perde vida;
+Bombas: Fim do jogo; <br>
+Pegar objetos do Clóvis: Ganha 5 pontos.<br>
+Não pegar os objetos do Clóvis (Gravata, óculos, camisa, chapéu, calça): Perde vida.<br>
+Objetos aleatórios (Garrafa, Guarda-chuva, vaso, bicicleta, banner): perde vida;<br>
 
