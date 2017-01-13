@@ -1,6 +1,6 @@
 # FuriousEx
 
-Despois de um termino de relacionamento nada amigável, Brigette decidiu jogar todas as coisas do seu Ex pela janela, sem se importar com as consequências.
+Despois de um término de relacionamento nada amigável, Brigette decidiu jogar todas as coisas do seu Ex pela janela, sem se importar com as consequências.
 
 
 Ajude Clóvis a coletar todos os seus pertences. Mas cuidado! Brigette está furiosa e além dos pertences do Clóvis ela está jogando outros objetos um tanto perigosos.
